@@ -57,8 +57,7 @@
       - [3.1.2 扩展性](#312----)
     + [3.2 虚拟节点](#32-----)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
+---
 
 # **Redis的架构模式**
 
