@@ -9,8 +9,24 @@
   * [百度贴吧的ksarch-saas：](#-----ksarch-saas-)
 
 ---
+## 面试问题
 
-redis 集群方案主要有两类，一是使用类 codis 的架构，按组划分，实例之间互相独立；
+![](https://img-blog.csdnimg.cn/20210330164808591.png)
+
+##  redis 集群方案
+
+业界主流的Redis集群化方案主要包括以下几个：
+
+- 客户端分片
+
+- 代理分片
+ codis 的架构，按组划分，实例之间互相独立；
+- 服务端分片
+基于官方的 redis cluster 的方案；
+
+##   大厂的 redis 集群方案
+
+大厂的 redis 集群方案主要有两类，一是使用类 codis 的架构，按组划分，实例之间互相独立；
 另一套是基于官方的 redis cluster 的方案；下面分别聊聊这两种方案；
 
 ## 类 codis 架构
@@ -114,3 +130,18 @@ twemproxy 实现了 smart client 功能；使用 redis cluster后还加一层 pr
 2. 加一层proxy可以做更多平台策略；比如在proxy可做 大key、热key的监控、慢查询的请求监控、以及接入控制、请求过滤等；
 
 即将发布的 redis 5.0 中有个 feature，作者计划给 redis cluster加一个proxy。
+
+---
+
+
+##  史上最全面试宝典《Java面试红宝石》 免费领取
+
+![](https://img-blog.csdnimg.cn/20210329213023227.png)
+
+## 惊：书中题目，在面试中直接出现
+
+![](https://img-blog.csdnimg.cn/2021032921325244.png)
+
+
+
+![](https://img-blog.csdnimg.cn/202103292135075.png)
